@@ -8,7 +8,7 @@ module.exports =  function(){
                 name: faker.name.findName(),
                 city: faker.address.city(),
                 email: faker.internet.email(),
-                avatar: faker.image.avatar()
+                avatar: faker.image.people()
             }
         })
     }
