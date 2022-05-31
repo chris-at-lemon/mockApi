@@ -1,5 +1,5 @@
 module.exports =  function(){
-    var faker = require('faker');
+    var { faker } = require('@faker-js/faker');
     var lodash = require('lodash');
     return{
         users:lodash.times(100, function(n){
@@ -8,7 +8,7 @@ module.exports =  function(){
                 name: faker.name.findName(),
                 city: faker.address.city(),
                 email: faker.internet.email(),
-                avatar: faker.image.people()
+                avatar: faker.image.avatar()
             }
         })
     }
